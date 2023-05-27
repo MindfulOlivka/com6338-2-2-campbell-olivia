@@ -25,5 +25,12 @@ function greet() {
     birthYear = currentYear - (age + 1);
   }
 
+  //if (birthYear && birthYear.trim()) {
+  // var trimmedbirthYear = birthYear.trim();
+  // alert("You were born in " + birthYear);
+  //   } else {
+  // alert("Information is incorrect!");
+  //   }
+
   alert("You were born in " + birthYear);
 }
