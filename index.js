@@ -4,8 +4,10 @@ function greet() {
   alert(greeting);
 
   var name = prompt("What is your name?");
-  if (name) {
-    alert("Hello, " + name + "!");
+  console.log("the value of name is", name);
+  if (name && name.trim()) {
+    var trimmedName = name.trim();
+    alert("Hello, " + trimmedName + "!");
   } else {
     alert("Hello!");
   }
