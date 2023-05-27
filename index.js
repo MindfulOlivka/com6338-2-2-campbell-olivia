@@ -6,7 +6,8 @@ function greet() {
   var name = prompt("What is your name?");
 
   if (name && name.trim()) {
-    alert("Hello, " + name.trim + "!");
+    var trimmedName = name.trim();
+    alert("Hello, " + trimmedName + "!");
   } else {
     alert("Hello!");
   }
@@ -24,9 +25,5 @@ function greet() {
     birthYear = currentYear - (age + 1);
   }
 
-  if (birthYear && birthYear.trim) {
-    alert("You were born in " + birthYear);
-  } else {
-    alert("Information is incorrect!");
-  }
+  alert("You were born in " + birthYear);
 }
