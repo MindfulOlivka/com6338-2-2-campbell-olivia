@@ -4,33 +4,19 @@ function greet() {
   alert(greeting);
 
   var name = prompt("What is your name?");
+  alert("Hello, " + name);
 
-  if (name && name.trim()) {
-    var trimmedName = name.trim();
-    alert("Hello, " + trimmedName + "!");
-  } else {
-    alert("Hello!");
-  }
+  var userAge = prompt("How old are you?");
+  userAge = parseInt(userAge);
 
-  var age = prompt("How old are you?");
-  age = parseInt(age);
-
-  var hasBirthday = confirm("Have you had a birthday this year?");
-  var currentYear = new Date().getFullYear();
+  var birthday = confirm("Have you had a birthday this year?");
   var birthYear;
 
-  if (hasBirthday) {
-    birthYear = currentYear - age;
+  if (birthday) {
+    birthYear = new Date().getFullYear() - userAge;
   } else {
-    birthYear = currentYear - (age + 1);
+    birthYear = new Date().getFullYear() - userAge - 1;
   }
-
-  //if (birthYear && birthYear.trim()) {
-  // var trimmedbirthYear = birthYear.trim();
-  // alert("You were born in " + birthYear);
-  //   } else {
-  // alert("Information is incorrect!");
-  //   }
 
   alert("You were born in " + birthYear);
 }
