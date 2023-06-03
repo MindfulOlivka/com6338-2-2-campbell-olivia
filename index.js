@@ -1,27 +1,27 @@
 // Your code here
 function greet() {
 
-  var name = prompt("What is your name?");
+  var name = prompt("What is your name?")
   if (name) {
-    alert("Hello, " + name);
+    alert("Hello, " + name)
   } else {
-    alert ("Hello!");
+    alert ("Hello!")
   }
   
-  var userAge = prompt("How old are you?");
-  console.log(parseInt(userAge));
+  var userAge = prompt("How old are you?")
+  console.log(parseInt(userAge))
 
-  var birthday = confirm("Have you had a birthday this year?");
-  var currentYear = new Date().getFullYear();
+  var birthday = confirm("Have you had a birthday this year?")
+  var currentYear = new Date().getFullYear()
 
-  var birthYear;
+  var birthYear
 
   if (birthday) {
-    birthYear = currentYear - userAge;
+    birthYear = currentYear - userAge
   } else {
-    birthYear = currentYear - userAge - 1;
+    birthYear = currentYear - userAge - 1
   }
 
-  alert ("Hello! You were born in " + birthYear + "!");
+  alert ("Hello! You were born in " + birthYear + "!")
 
 }
